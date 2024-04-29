@@ -1,0 +1,159 @@
+body{
+    background-color: #ebebeb;
+}
+
+.apresentacao{
+    padding-top: 300px;
+}
+
+#home{
+    margin-bottom: 6rem;
+    background: url(../images/FundoCapa.png) left top no-repeat; 
+}
+
+.sobre{
+    height: 900px;
+}
+
+.sobre_txt{
+    font-size: 25px;
+    margin-top: 0.5em;
+    color: #129cf8;
+
+
+}
+
+.fundoImagem{
+    width: 450px; /* Ajuste a largura do quadrado conforme necessário */
+    height: 450px; /* Ajuste a altura do quadrado conforme necessário */
+    border: 2px solid #129cf8;
+    border-radius: 2px; /* Adiciona uma borda ao redor do quadrado */
+    position: relative; /* Para posicionar a imagem absolutamente em relação a este contêiner */
+    overflow: hidden; /* Garante que a imagem não ultrapasse os limites do quadrado */
+}
+#imgSobre{
+    position: absolute; /* Para posicionar a imagem em relação ao contêiner */
+    width: 450px; /* Mantém a proporção da imagem */
+    height: 100%; /* Garante que a imagem cubra toda a altura do quadrado */
+    left: 50%; /* Ajusta a posição horizontalmente para o centro */
+    transform: translateX(-50%); /* Centraliza a imagem horizontalmente */
+}
+
+.servicos{
+    height: 1000px;
+}
+
+.card{
+    width: 22rem; 
+    margin: 20px 42px;
+}
+
+
+.duvidas{
+    background-color: #e9f3f7;
+}
+
+.titulo_rosa {
+    font-size: 50px;
+    color: #296dff;
+}
+
+.content{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.accordion_item{
+    font-family: var(--fonte-nome);
+    font-weight: 500;
+    margin: 6px;
+    border-radius: 5px;
+    border: solid 2px black;
+
+}
+
+.accordion_item:hover{
+    opacity: 0.9;
+}
+
+.accordion_header{
+    padding: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+.accordion_content{
+    overflow: hidden;
+    height: 0;
+    transition: all .5s ease;
+}
+
+.actve{
+    padding-bottom:10px;
+}
+
+span, .icon{
+    font-weight: 600;
+    color: var(--roxo);
+}
+
+.selecionado{
+    color: var(--roxo);
+    border-bottom: 2px solid var(--roxo);
+    border-radius: 0;
+}
+
+.titulo__duvida{
+    font-family: var(--fonte-nome);
+    font-weight: 500;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 20px;
+   
+}
+
+.paragrafo__projeto{
+    font-size: 18px;
+    font-family: var(--fonte-nome);
+    font-weight: 500; font-weight: 500;
+    margin: 0 1em;
+}
+
+.atendimentos{
+    background-color: #f2dbfd;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .duvidas{
+        width: 127%;
+    }
+
+    .content{
+        width: 100%;
+        margin: 0px auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .duvidas{
+        width: 125%;
+        overflow: scroll;
+    }
+
+    .content{
+        width: 100%;
+        margin: 0px auto;
+    }
+
+    .accordion_itens{
+        display: flex;
+        flex-direction: column;
+    }
+    .item_projeto{
+        font-size: 25px;
+    }
+}
