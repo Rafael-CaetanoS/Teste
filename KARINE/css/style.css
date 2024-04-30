@@ -1,47 +1,97 @@
+:root{
+   --rosaLogo: #F27999;
+   --azulLogo: #96CCD9;
+   --fonte: "kalam",cursive;
+
+}
+
+.cabecalho-direita{
+    color: var(--rosaLogo);
+}
+
+.cabecalho-esquerda{
+    color: var(--azulLogo);
+}
+
 body{
     background-color: #ebebeb;
 }
 
-.apresentacao{
-    padding-top: 300px;
+#inicio{
+    height: 102vh;
+    margin-bottom: 0rem;
+    background: url(../images/FundoCapa.png) left top no-repeat;
+    overflow: hidden; 
 }
 
-#home{
-    margin-bottom: 6rem;
-    background: url(../images/FundoCapa.png) left top no-repeat; 
+.apresentacao{
+    margin-top: 90px;
+    padding: 0px 16rem;
+}
+
+.imagem-capa{
+    padding-top: 55px;
 }
 
 .sobre{
-    height: 900px;
+    margin-top: 20px;
+    height: 100vh;
 }
 
-.sobre_txt{
+.sobre_txt{ 
+    font-family: var(--fonte);
+    list-style-type: none;
+    align-items: center;
+    margin: 4px 100px;
+    padding-left: 6px;
     font-size: 25px;
-    margin-top: 0.5em;
-    color: #129cf8;
+    color: var(--azulLogo);
+}
 
 
+.fundo-sobre{
+    width: 65%;
+    height: 450px;
+    padding: 20px 20px 3px;
+    margin:0 10px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid var(--rosaLogo);
+    border-radius: 0 10px 10px 0;
+}
+
+#fundo-experiencia{
+    width: 98.4%;
+    height: 350px;
+    padding-left: 4px;
+    margin:30px 10px;
+    background-color: rgb(255, 255, 255);
 }
 
 .fundoImagem{
-    width: 450px; /* Ajuste a largura do quadrado conforme necessário */
-    height: 450px; /* Ajuste a altura do quadrado conforme necessário */
-    border: 2px solid #129cf8;
-    border-radius: 2px; /* Adiciona uma borda ao redor do quadrado */
-    position: relative; /* Para posicionar a imagem absolutamente em relação a este contêiner */
-    overflow: hidden; /* Garante que a imagem não ultrapasse os limites do quadrado */
+    width: 450px; 
+    height: 450px; 
+    border: 2px solid var(--rosaLogo);
+    border-radius: 10px; 
+    position: relative; 
+    overflow: hidden; 
 }
+
 #imgSobre{
-    position: absolute; /* Para posicionar a imagem em relação ao contêiner */
-    width: 450px; /* Mantém a proporção da imagem */
-    height: 100%; /* Garante que a imagem cubra toda a altura do quadrado */
-    left: 50%; /* Ajusta a posição horizontalmente para o centro */
-    transform: translateX(-50%); /* Centraliza a imagem horizontalmente */
+    position: absolute;
+    width: 450px; 
+    height: 100%; 
+    left: 50%; 
+    transform: translateX(-50%); 
 }
 
 .servicos{
     height: 1000px;
 }
+
+.imagem_servico{
+    width: 70px; height: 70px;
+}
+
 
 .card{
     width: 22rem; 
@@ -49,12 +99,11 @@ body{
 }
 
 
-.duvidas{
-    background-color: #e9f3f7;
-}
 
-.titulo_rosa {
-    font-size: 50px;
+
+.titulo {
+    font-family: var(--fonte);
+    font-size: 40px;
     color: #296dff;
 }
 
@@ -122,8 +171,42 @@ span, .icon{
     margin: 0 1em;
 }
 
-.atendimentos{
-    background-color: #f2dbfd;
+#duvidas{
+    height: 100vh;
+}
+
+
+@media screen and (max-width: 1440px) {
+    .apresentacao{
+        margin-top: -4px;
+        padding: 0px 8rem;
+    }
+
+    .sobre{
+        height: 120vh;
+    }
+
+    .fundo-sobre{
+        width: 64%;
+        padding: 0px;
+        margin:0 10px;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .sobre_txt{ 
+        align-items: center;
+        margin: 0px 110px;
+        padding-top: 4;
+        padding-left: 50px;
+        font-size: 25px;
+        color: #129cf8;
+    }
+
+    .teste1{
+        margin-top: 30px;
+    }
+    
+    
 }
 
 
@@ -139,9 +222,68 @@ span, .icon{
 }
 
 @media screen and (max-width: 768px) {
+    #inicio{
+        height: 102vh;
+        margin-bottom: 0rem;
+        background: none;
+        background-color: rgb(255, 255, 255);
+        overflow: hidden; 
+    }
+   
+    .apresentacao{
+        margin-top: 120px;
+        padding: 0px 3.5rem;
+    }
+
+    .fundoImagem{
+        width: 350px; 
+        height: 350px; 
+        border: 2px solid #129cf8;
+        border-radius: 2px; 
+        position: relative; 
+        overflow: hidden; 
+    }
+    
+    #imgSobre{
+        position: absolute;
+        width: 350px; 
+        height: 100%; 
+        left: 50%; 
+        transform: translateX(-50%); 
+    }
+
+    .sobre{
+        height: 240vh;
+    }
+    
+    .fundo-sobre{
+        width: 100%;
+        padding:10px 60px;
+        margin:20px 10px;
+        background-color: rgb(255, 255, 255);
+    }
+    
+
+  
+
+    .sobre_txt{ 
+        font-family: var(--fonte-nome);
+        list-style-type: none;
+        align-items: center;
+        margin: 4px 0px;
+        padding-left: 0px;
+        font-size: 25px;
+        color: #129cf8;
+    }
+    
+
     .duvidas{
         width: 125%;
         overflow: scroll;
+    }
+
+    .servicos{
+        height: 1900px;
     }
 
     .content{
@@ -155,5 +297,10 @@ span, .icon{
     }
     .item_projeto{
         font-size: 25px;
+    }
+
+    .card{
+        width: 20rem; 
+        margin: 20px auto;
     }
 }
