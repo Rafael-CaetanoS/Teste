@@ -30,4 +30,3 @@ function VerifyActive(item, content, content_actived){
 
     }
 }
-

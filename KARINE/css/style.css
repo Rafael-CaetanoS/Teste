@@ -1,111 +1,94 @@
+.body{
+    padding: 0px;
+    margin: 0px;
+}
 :root{
-   --rosaLogo: #F27999;
-   --azulLogo: #96CCD9;
-   --fonte: "kalam",cursive;
-
-}
-
-.cabecalho-direita{
-    color: var(--rosaLogo);
-}
-
-.cabecalho-esquerda{
-    color: var(--azulLogo);
-}
-
-body{
-    background-color: #ebebeb;
-}
-
-#inicio{
-    height: 102vh;
-    margin-bottom: 0rem;
-    background: url(../images/FundoCapa.png) left top no-repeat;
-    overflow: hidden; 
+    --marrom: #C27666;
+    --salmao: #FDB8A9;
+    --bege: #FFDBCB;
+    --cinza: #EFEAE6;
+    --azul_bb: #57CBCA;
+    --verde: #007E80;
+    --Poppins: "Poppins", sans-serif;
 }
 
 .apresentacao{
-    margin-top: 90px;
-    padding: 0px 16rem;
+    padding: 35vh 25vh ;
 }
 
-.imagem-capa{
-    padding-top: 55px;
+.texto_apresentacao{
+    font-size: 5vh;
 }
 
+#imagem-capa{
+    width: 40%;
+    height: 40%;
+    display: block;
+}
+
+.teste{
+    margin-top: 10px;
+}
+
+.btn-redes{
+    background-size: cover;
+    background-color: var(--verde);
+    width: 40px; 
+    height: 40px; 
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 23px;
+    box-shadow: 1px 1px 2px #888;
+    display: inline-block;
+    margin-left: 10px;
+   
+}
+
+.titulo{
+    font-size: 5vh;
+    font-family: var(--Poppins);
+    font-weight: 800;
+    color: var(--marrom);
+}
 .sobre{
-    margin-top: 20px;
-    height: 100vh;
+    background-image: url("../images/Fundo.png");
 }
 
-.sobre_txt{ 
-    font-family: var(--fonte);
+.fundo_imagem_sobre{
+    border: 2px solid var(--azul_bb)
+}
+
+#imagem-sobre{
+    margin: 0 auto;
+   
+}
+
+.fundo_txt_sobre{
+    padding: 30px 0 40px 20px;
+    background-color: rgba(248, 235, 235, 0.4);
+}
+
+.txt_sobre{
+    margin-bottom: 10px;
+    font-size: 22px;
     list-style-type: none;
-    align-items: center;
-    margin: 4px 100px;
-    padding-left: 6px;
-    font-size: 25px;
-    color: var(--azulLogo);
+    color: var(--verde);
 }
 
-
-.fundo-sobre{
-    width: 65%;
-    height: 450px;
-    padding: 20px 20px 3px;
-    margin:0 10px;
-    background-color: rgb(255, 255, 255);
-    border: 2px solid var(--rosaLogo);
-    border-radius: 0 10px 10px 0;
+.titulo_2{
+    text-align: center;
+    font-size: 3vh;
+    font-family: var(--Poppins);
+    font-weight: 800;
+    color: var(--verde);
 }
 
-#fundo-experiencia{
-    width: 98.4%;
-    height: 350px;
-    padding-left: 4px;
-    margin:30px 10px;
-    background-color: rgb(255, 255, 255);
-}
-
-.fundoImagem{
-    width: 450px; 
-    height: 450px; 
-    border: 2px solid var(--rosaLogo);
-    border-radius: 10px; 
-    position: relative; 
-    overflow: hidden; 
-}
-
-#imgSobre{
-    position: absolute;
-    width: 450px; 
-    height: 100%; 
-    left: 50%; 
-    transform: translateX(-50%); 
-}
-
-.servicos{
-    height: 1000px;
-}
-
-.imagem_servico{
-    width: 70px; height: 70px;
-}
-
-
-.card{
-    width: 22rem; 
-    margin: 20px 42px;
-}
-
-
-
-
-.titulo {
-    font-family: var(--fonte);
-    font-size: 40px;
-    color: #296dff;
-}
+.carousel-container {
+    max-width: 80vh;
+    margin: 0 auto; 
+  }
+  
 
 .content{
     width: 100%;
@@ -171,123 +154,103 @@ span, .icon{
     margin: 0 1em;
 }
 
-#duvidas{
-    height: 100vh;
+
+.whatsapp-link {
+    position: fixed;
+    width: 220px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: var(--verde);
+    border-radius: 40px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+}
+
+.fa-whatsapp {
+    margin-top: 16px;
+}
+
+.servicos{
+    height: 1000px;
+}
+
+.imagem_servico{
+    width: 50px; height: 50px;
 }
 
 
-@media screen and (max-width: 1440px) {
-    .apresentacao{
-        margin-top: -4px;
-        padding: 0px 8rem;
-    }
-
-    .sobre{
-        height: 120vh;
-    }
-
-    .fundo-sobre{
-        width: 64%;
-        padding: 0px;
-        margin:0 10px;
-        background-color: rgb(255, 255, 255);
-    }
-
-    .sobre_txt{ 
-        align-items: center;
-        margin: 0px 110px;
-        padding-top: 4;
-        padding-left: 50px;
-        font-size: 25px;
-        color: #129cf8;
-    }
-
-    .teste1{
-        margin-top: 30px;
-    }
-    
-    
+.card{
+    width: 22rem; 
+    margin: 20px auto;
 }
+
+
+
 
 
 @media screen and (max-width: 1024px) {
-    .duvidas{
-        width: 127%;
+    #fundo-imagem-sobre{
+        margin-top: 30px;
     }
 
+    .apresentacao{
+        align-items: center;
+        padding: 35vh 15vh;
+        margin: 0 auto;
+    }
+
+    .texto_apresentacao{
+        font-size: 4vh;
+    }
+
+    #imagem-capa{
+        width: 50%;
+        height: 50%;
+        display: block;
+    }
+    
+    
     .content{
         width: 100%;
         margin: 0px auto;
     }
+
 }
 
 @media screen and (max-width: 768px) {
-    #inicio{
-        height: 102vh;
-        margin-bottom: 0rem;
-        background: none;
-        background-color: rgb(255, 255, 255);
-        overflow: hidden; 
+    .fundo_tinta{
+        background-image: none !important;
     }
-   
+
     .apresentacao{
-        margin-top: 120px;
-        padding: 0px 3.5rem;
-    }
-
-    .fundoImagem{
-        width: 350px; 
-        height: 350px; 
-        border: 2px solid #129cf8;
-        border-radius: 2px; 
-        position: relative; 
-        overflow: hidden; 
-    }
-    
-    #imgSobre{
-        position: absolute;
-        width: 350px; 
-        height: 100%; 
-        left: 50%; 
-        transform: translateX(-50%); 
-    }
-
-    .sobre{
-        height: 240vh;
-    }
-    
-    .fundo-sobre{
-        width: 100%;
-        padding:10px 60px;
-        margin:20px 10px;
-        background-color: rgb(255, 255, 255);
-    }
-    
-
-  
-
-    .sobre_txt{ 
-        font-family: var(--fonte-nome);
-        list-style-type: none;
         align-items: center;
-        margin: 4px 0px;
-        padding-left: 0px;
-        font-size: 25px;
-        color: #129cf8;
-    }
-    
-
-    .duvidas{
-        width: 125%;
-        overflow: scroll;
+        padding: 35vh 10vh;
+        margin: 0 auto;
     }
 
-    .servicos{
-        height: 1900px;
+    .texto_apresentacao{
+        font-size: 4vh;
     }
 
+
+    #imagem-capa{
+        display: none;
+    }
+    .txt_sobre{
+        font-size: 20px;
+    }
+
+    .carousel-container {
+        max-width: 100%;
+        margin: 0 auto; 
+      }
+      
     .content{
-        width: 100%;
         margin: 0px auto;
     }
 
@@ -299,8 +262,24 @@ span, .icon{
         font-size: 25px;
     }
 
-    .card{
-        width: 20rem; 
-        margin: 20px auto;
+    .whatsapp-link {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 40px;
+        right: 40px;
+        background-color: var(--verde);
+        color: #fff;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 1px 1px 2px #888;
+        z-index: 1000;
     }
+
+    #link-whatsApp{
+        display: none;
+    }
+
+    
 }
