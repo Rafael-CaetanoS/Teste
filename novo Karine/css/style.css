@@ -1,0 +1,277 @@
+.body{
+    padding: 0px;
+    margin: 0px;
+}
+:root{
+    --marrom: #C27666;
+    --salmao: #FDB8A9;
+    --bege: #FFDBCB;
+    --cinza: #EFEAE6;
+    --azul_bb: #57CBCA;
+    --verde: #007E80;
+    --Poppins: "Poppins", sans-serif;
+}
+
+.apresentacao{
+    padding: 35vh 25vh ;
+}
+
+.texto_apresentacao{
+    font-size: 6vh;
+}
+
+#nome{
+    font-size: 7vh;
+}
+
+#imagem-capa{
+    width: 40%;
+    height: 40%;
+    display: block;
+}
+
+
+.btn-redes{
+    background-size: cover;
+    background-color: var(--verde);
+    width: 40px; 
+    height: 40px; 
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 23px;
+    box-shadow: 1px 1px 2px #888;
+    display: inline-block;
+    margin-left: 10px;
+   
+}
+
+.titulo{
+    font-size: 5vh;
+    font-family: var(--Poppins);
+    font-weight: 800;
+    color: var(--verde);
+}
+.sobre{
+    background-image: url("../images/Fundo.png");
+}
+
+.txt_sobre{
+    margin-bottom: 10px;
+    font-size: 22px;
+    list-style-type: none;
+    color: var(--verde);
+}
+
+.titulo_2{
+    text-align: center;
+    font-size: 3vh;
+    font-family: var(--Poppins);
+    font-weight: 800;
+    color: var(--verde);
+}
+
+.carousel-container {
+    max-width: 80vh;
+    margin: 0 auto; 
+  }
+
+  .duvidas{
+    height: 80vh;
+  }
+
+  .espacos{
+    background-image: url("../images/Fundo.png");
+  }
+  
+
+.content{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.accordion_item{
+    font-family: var(--fonte-nome);
+    color: var(--verde);
+    font-weight: 500;
+    margin: 6px;
+    border-radius: 5px;
+    border: solid 2px #C9E4E4;
+
+}
+
+.accordion_item:hover{
+    opacity: 0.9;
+}
+
+.accordion_header{
+    padding: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+.accordion_content{
+    overflow: hidden;
+    height: 0;
+    transition: all .5s ease;
+}
+
+.actve{
+    padding-bottom:10px;
+}
+
+span, .icon{
+    font-weight: 600;
+    color: var(--roxo);
+}
+
+.selecionado{
+    color: var(--roxo);
+    border-bottom: 2px solid var(--roxo);
+    border-radius: 0;
+}
+
+.titulo__duvida{
+    font-family: var(--fonte-nome);
+    font-weight: 500;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 20px;
+   
+}
+
+.paragrafo__projeto{
+    font-size: 18px;
+    font-family: var(--fonte-nome);
+    font-weight: 500; font-weight: 500;
+    margin: 0 1em;
+}
+
+
+.whatsapp-link {
+    position: fixed;
+    width: 220px;
+    height: 60px;
+    bottom: 30px;
+    right: 40px;
+    background-color: var(--verde);
+    border-radius: 40px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+}
+
+.fa-whatsapp {
+    margin-top: 16px;
+}
+
+.servicos{
+    height: 1000px;
+}
+
+.imagem_servico{
+    width: 90px; height: 90px;
+}
+
+
+.card{
+    width: 22rem; 
+    margin: 20px auto;
+}
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+    #fundo-imagem-sobre{
+        margin-top: 30px;
+    }
+
+    .apresentacao{
+        align-items: center;
+        padding: 35vh 15vh;
+        margin: 0 auto;
+    }
+
+    .texto_apresentacao{
+        font-size: 4vh;
+    }
+
+    #imagem-capa{
+        width: 50%;
+        height: 50%;
+        display: block;
+    }
+    
+    
+    .content{
+        width: 100%;
+        margin: 0px auto;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .apresentacao{
+        align-items: center;
+        padding: 35vh 10vh;
+        margin: 0 auto;
+    }
+
+    .texto_apresentacao{
+        font-size: 4vh;
+    }
+
+
+    #imagem-capa{
+        display: none;
+    }
+    .txt_sobre{
+        font-size: 20px;
+    }
+
+    .carousel-container {
+        max-width: 100%;
+        margin: 0 auto; 
+      }
+      
+    .content{
+        margin: 0px auto;
+    }
+
+    .accordion_itens{
+        display: flex;
+        flex-direction: column;
+    }
+    .item_projeto{
+        font-size: 25px;
+    }
+
+    .whatsapp-link {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 40px;
+        right: 40px;
+        background-color: var(--verde);
+        color: #fff;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 1px 1px 2px #888;
+        z-index: 1000;
+    }
+
+    #link-whatsApp{
+        display: none;
+    }
+
+    
+}
